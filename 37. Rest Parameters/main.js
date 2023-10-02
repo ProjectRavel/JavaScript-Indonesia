@@ -3,34 +3,22 @@
 //                   (mengemas argumen dalam array)
 
 
-// let a = 1
-// let b = 2
-// let c = 3
-// let d = 4
-// let e = 5
+let a = 1
+let b = 2
+let c = 3
+let d = 4
+let e = 5
 
-// console.log (sum(a, b, c, d , e))
+console.log (sum(a, b, c, d , e))
 
+// jadi sum(apapun) kita masukkan ke function
+function sum(...numbers){
+    //... berguna untuk mengemas 1 per 1 argumen
 
-// function sum(...numbers){
-//     total = 0
-//     for(let number of numbers){
-//         total += number
-//     }
-//     return total
-// }
-
-let n1 = 2
-let n2 = 4
-let n3 = 6
-
-
-function test(...numbers){
-    totaldari = 0
+    total = 0
+    // kita buat loop untuk pertambahan dalam sum()
     for(let number of numbers){
-        totaldari += number
+        total += number //total = (a+b+c+d+e)
     }
-    return totaldari
+    return total //kita return supaya total ini bisa jadi deklarasi diluar function
 }
-
-console.log (test(n1,n2,n3))

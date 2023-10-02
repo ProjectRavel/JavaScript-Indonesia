@@ -1,26 +1,24 @@
+// Callback tuh kayak memanggil kembali fungsi dari function ke function lainnya
+// misal hasil di function pertama 2, nah trus 2 ini pindahin ke function lainnya buat
+// di masukkin ke dalam .innerHTML
+
+x = 10
+y = 20
+z = 30
+n = 40
 
 
-// callback = sebuah fungsi diteruskan sebagai dan argumen
-// ke fungsi lain
+let total = sum(x,y,z,n,DisplayDOM)
+console.log (hasil)
 
-// Memastikan bahwa suatu fungsi tidak berjalan
-// untuk dijalankan sebelum tugas selesai.
-// membantu kita mengembangkan kode asinkron.
-// (Ketika suatu fungsi harus menunggu fungsi lainnya)
-// yang membantu kita menghindari kesalahan dan potensi masalah
-//  Mantan. Tunggu hingga file dimuat (yagitu dah ribet emang semangat ya!)
-
-
-a = 999
-b = 999
-
-Sum(a,b, displayDOM)
-
-function Sum(x,y, callback){
-    let result = x + y
-    callback(result)
+function sum(x,y,z,n, results){
+    hasil = x + y + z + n
+    results(hasil) //sebenarnya results ini adalah DisplayDOM karena ketika kalian code diatas kalian sadar
+    //bahwa x,y,z,n,(DisplayDOM)
 }
 
-function displayDOM(output){
-    document.getElementById("mylabel").innerHTML = output
+function DisplayDOM(hasil){
+    // Nah tadi kan hasilnya adalah lah perjumlahan dari x,y,z,n ini kita masukkan ke dalam fungsi DisplayDOM(hasil)
+    // Fungsi dari function ini adalah memasukkan hasil dari penjumlahan "hasil" ke .innerHTML
+    document.getElementById("mylabel").innerHTML = hasil
 }
