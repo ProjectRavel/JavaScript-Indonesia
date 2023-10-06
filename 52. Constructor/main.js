@@ -2,20 +2,16 @@
 //               accepts arguments and assigns properties
 
 class students{
-    constructor(name,age,iq){
-       this.name = name
-       this.age  = age
-       this.iq   = iq
-    }
-    study(){
-        console.log (`${name} studying`)
-    }
-    
+    constructor(Nama,Umur,Nilai){
 
+        this.Nama = Nama
+        this.Umur = Umur
+        this.Nilai = Nilai
+    }
+        
+    
 }
 
-let student1 = new students("Spongebob", 30, 150)
+let students1 = new students("Rafael", 15, 99)
 
-console.log (student1.name)
-console.log (student1.age)
-console.log (student1.iq)
+console.log (students1)
