@@ -1,20 +1,17 @@
 
 let count = 0
-let max = prompt(`set a number`)
-max = Number(max)
+let hasil = prompt("Seberapa Besar Cinta ku padamu")
+hasil = Number(hasil)
+let interval  = setInterval(Test, 1)
 
-const mytimer = setInterval(countup,1)
-
-function countup(){
-    count += 1
-
-    if (count <= max){ 
-        document.getElementById("count").innerHTML = count
-    }else if(count >= max){
-        clearInterval(mytimer)
+function Test(){
+    
+    if(count < hasil){
+        count +=1
+        document.getElementById("count").innerHTML = `${count}%`
+    }else{
+        clearInterval("interval")
     }
     
-
 }
-
 

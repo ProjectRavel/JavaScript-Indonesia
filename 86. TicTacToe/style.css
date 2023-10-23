@@ -1,0 +1,18 @@
+.cell{
+    width: 75px;
+    height: 75px;
+    border: black solid 2px;
+    line-height: 75px;
+    font-size: 3rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+#cellcontainer{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    width: 225px;
+    margin: auto;
+}
+#gamecontainer{
+    text-align: center;
+}

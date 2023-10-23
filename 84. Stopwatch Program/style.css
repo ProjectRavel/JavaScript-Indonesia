@@ -1,0 +1,31 @@
+.stopwatchdiv{
+    margin: auto auto;
+    background-color: rgb(49, 49, 49);
+    border-radius: 20px;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.count{
+    font-family: monospace;
+    color: rgb(29, 221, 12);
+    font-size: 4rem;
+    margin: 20px;
+    text-align: center;
+}
+.buttondiv{
+    padding: 5px;
+}
+
+.button{
+    font-family: monospace;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    margin-inline: 6px;    
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}

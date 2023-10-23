@@ -1,0 +1,51 @@
+#container{
+  
+    border-radius: 10px;
+    padding: 10px;
+    width: fit-content;
+    text-align: center;
+    margin: auto auto;
+    box-shadow: 5px 10px 10px rgb(212, 212, 212);
+}
+#header1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(59, 59, 59);
+}
+#youlabel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#choice{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(55, 196, 0);
+}
+.game{
+    margin-inline: 5px;
+    border-color: gray;
+    border-radius: 2px;
+    box-shadow: rgba(128, 128, 128, 0.479) 2px 2px 4px;
+    border-style: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#computerlabel{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#computerchoice{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: rgb(196, 0, 0);
+}
+.result{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
